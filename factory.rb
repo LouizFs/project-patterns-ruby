@@ -1,4 +1,4 @@
-class Creator
+class Creator #interface factory
   def factory_method
     raise NotImplementedError, "#{self.class} has not implemented method '#{_method_}'"
   end
@@ -26,7 +26,7 @@ class ConcreteCreator2 < Creator
 end
 
 
-class Product
+class Product #interfave
   def operation
     raise NotImplementedError, "#{self.class} has not implemented method '#{_method_}'"
   end
